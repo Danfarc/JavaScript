@@ -40,7 +40,7 @@ const crearDeck = () => {
 
     deck = _.shuffle(deck);
 
-    console.log(deck);
+    // console.log(deck);
 
     return deck;
 }
@@ -98,7 +98,7 @@ const turnoComputadora = (puntosMinimos)=>{
         const imgCarta = document.createElement('img');
         imgCarta.src = `assets/cartas/${carta}.png`;
         // imgCarta.classList = 'cartas';
-        imgCarta.classList.add('cartas');
+        imgCarta.classList.add('carta');
         divCartasComputadora.append(imgCarta);
 
         if(puntosMinimos > 21){
@@ -137,7 +137,7 @@ btnPedir.addEventListener('click',()=>{
     const imgCarta = document.createElement('img');
     imgCarta.src = `assets/cartas/${carta}.png`;
     // imgCarta.classList = 'cartas';
-    imgCarta.classList.add('cartas');
+    imgCarta.classList.add('carta');
     divCartasJugador.append(imgCarta);
     // console.log({carta,puntosJudador});
 
